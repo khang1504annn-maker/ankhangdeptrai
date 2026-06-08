@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phạm An Khang | Profile</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    url("anfield.jfif");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.card{
+    width:90%;
+    max-width:850px;
+
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+    padding:40px;
+
+    text-align:center;
+    color:white;
+
+    box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+.avatar{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid #fff;
+    object-fit:cover;
+}
+
+h1{
+    margin-top:20px;
+    font-size:45px;
+    text-shadow:0 0 15px #ff0000;
+}
+
+.subtitle{
+    margin-top:10px;
+    font-size:20px;
+    color:#ffd700;
+}
+
+p{
+    margin-top:20px;
+    font-size:18px;
+    line-height:1.8;
+}
+
+.info{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.box{
+    background:rgba(255,255,255,0.15);
+    padding:15px 25px;
+    border-radius:15px;
+    min-width:180px;
+}
+
+.box h3{
+    margin-bottom:8px;
+}
+
+.skill{
+    margin-top:30px;
+}
+
+.bar{
+    width:100%;
+    height:20px;
+    background:#444;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.fill{
+    width:90%;
+    height:100%;
+    background:linear-gradient(to right,#ff0000,#ffd700);
+}
+
+.footer{
+    margin-top:30px;
+    color:#ddd;
+}
+</style>
+</head> 
+
+<body>
+
+<div class="card">
+
+    <!-- Thay avatar.jpg bằng ảnh của bạn -->
+    <img src="lvp.jfif" class="avatar">
+
+    <h1>⚽ Phạm An Khang ⚽</h1>
+
+    <div class="subtitle">Football Lover</div>
+
+    <p>
+        Xin chào! Mình là Phạm An Khang.
+        Mình rất thích đá bóng và luôn cố gắng cải thiện kỹ năng của mình mỗi ngày.
+        Mình yêu thích những trận đấu sôi động, tinh thần đồng đội và cảm giác ghi bàn.
+    </p>
+
+    <p>
+        Ngoài bóng đá, mình cũng thích khám phá công nghệ và học hỏi những điều mới.
+        Mục tiêu của mình là luôn tiến bộ và đạt được những thành công trong tương lai.
+    </p>
+
+    <div class="info">
+        <div class="box">
+            <h3>🎂 Sinh ngày</h3>
+            <p>15/04/2012</p>
+        </div>
+
+        <div class="box">
+            <h3>⚽ Sở thích</h3>
+            <p>Đá bóng</p>
+        </div>
+
+        <div class="box">
+            <h3>❤️ Đội bóng yêu thích</h3>
+            <p>Liverpool</p>
+        </div>
+    </div>
+
+    <div class="skill">
+        <h3>Kỹ năng bóng đá</h3>
+        <div class="bar">
+            <div class="fill"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        You'll Never Walk Alone 🔴
+    </div>
+
+</div>
+
+</body>
+</html>
