@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phạm An Khang | Profile</title>
+<title>Phạm An Khang | Liverpool Fan</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -20,7 +21,10 @@ body{
     align-items:center;
 
     background:
-    linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
+    linear-gradient(
+        rgba(0,0,0,0.75),
+        rgba(80,0,0,0.55)
+    ),
     url("anfield.jfif");
 
     background-size:cover;
@@ -30,10 +34,10 @@ body{
 
 .card{
     width:90%;
-    max-width:850px;
+    max-width:900px;
 
     background:rgba(255,255,255,0.12);
-    backdrop-filter:blur(12px);
+    backdrop-filter:blur(15px);
 
     border-radius:25px;
     padding:40px;
@@ -42,26 +46,48 @@ body{
     color:white;
 
     box-shadow:0 0 30px rgba(0,0,0,0.5);
+
+    transition:0.5s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 20px red,
+    0 0 50px red,
+    0 0 80px rgba(255,0,0,0.5);
 }
 
 .avatar{
     width:180px;
     height:180px;
     border-radius:50%;
-    border:5px solid #fff;
+    border:5px solid white;
     object-fit:cover;
+
+    box-shadow:
+    0 0 15px red,
+    0 0 30px red;
 }
 
 h1{
     margin-top:20px;
-    font-size:45px;
-    text-shadow:0 0 15px #ff0000;
+    font-size:50px;
+    color:white;
+
+    text-shadow:
+    0 0 10px red,
+    0 0 20px red,
+    0 0 40px red,
+    0 0 80px red;
 }
 
 .subtitle{
     margin-top:10px;
     font-size:20px;
     color:#ffd700;
+    font-weight:bold;
 }
 
 p{
@@ -83,6 +109,13 @@ p{
     padding:15px 25px;
     border-radius:15px;
     min-width:180px;
+
+    transition:0.3s;
+}
+
+.box:hover{
+    transform:scale(1.05);
+    background:rgba(255,255,255,0.25);
 }
 
 .box h3{
@@ -90,53 +123,69 @@ p{
 }
 
 .skill{
-    margin-top:30px;
+    margin-top:35px;
 }
 
 .bar{
     width:100%;
     height:20px;
-    background:#444;
+    background:#333;
     border-radius:20px;
     overflow:hidden;
 }
 
 .fill{
-    width:90%;
     height:100%;
     background:linear-gradient(to right,#ff0000,#ffd700);
+
+    animation:load 2s ease-out forwards;
+}
+
+@keyframes load{
+    from{
+        width:0;
+    }
+
+    to{
+        width:90%;
+    }
 }
 
 .footer{
-    margin-top:30px;
+    margin-top:35px;
     color:#ddd;
+    font-size:18px;
+    line-height:1.8;
 }
-</style>
-</head> 
 
+</style>
+</head>
+    
 <body>
 
 <div class="card">
 
-    <!-- Thay avatar.jpg bằng ảnh của bạn -->
-    <img src="lvp.jfif" class="avatar">
+    <img src="r5.jpg" class="avatar">
 
     <h1>⚽ Phạm An Khang ⚽</h1>
 
-    <div class="subtitle">Football Lover</div>
+    <div class="subtitle">
+        🔴 Liverpool Fan | ⚽ Striker | 🔥 Never Give Up
+    </div>
 
     <p>
         Xin chào! Mình là Phạm An Khang.
-        Mình rất thích đá bóng và luôn cố gắng cải thiện kỹ năng của mình mỗi ngày.
-        Mình yêu thích những trận đấu sôi động, tinh thần đồng đội và cảm giác ghi bàn.
+        Mình rất yêu thích bóng đá và luôn cố gắng hoàn thiện kỹ năng của mình mỗi ngày.
+        Mình thích những trận đấu sôi động, tinh thần đồng đội và cảm giác ghi những bàn thắng đẹp mắt.
     </p>
 
     <p>
-        Ngoài bóng đá, mình cũng thích khám phá công nghệ và học hỏi những điều mới.
-        Mục tiêu của mình là luôn tiến bộ và đạt được những thành công trong tương lai.
+        Bóng đá không chỉ là sở thích mà còn là niềm đam mê lớn nhất của mình.
+        Mình luôn cố gắng hết sức trong mọi trận đấu và không ngừng tiến bộ để trở thành phiên bản tốt hơn của chính mình.
     </p>
 
     <div class="info">
+
         <div class="box">
             <h3>🎂 Sinh ngày</h3>
             <p>15/04/2012</p>
@@ -151,17 +200,43 @@ p{
             <h3>❤️ Đội bóng yêu thích</h3>
             <p>Liverpool</p>
         </div>
+
     </div>
 
     <div class="skill">
-        <h3>Kỹ năng bóng đá</h3>
+        <h2>Kỹ năng bóng đá</h2>
+        <br>
+
         <div class="bar">
             <div class="fill"></div>
         </div>
+
+        <p>90%</p>
+    </div>
+
+    <div class="info">
+
+        <div class="box">
+            <h3>⚡ Tốc độ</h3>
+            <p>9/10</p>
+        </div>
+
+        <div class="box">
+            <h3>🎯 Dứt điểm</h3>
+            <p>9.5/10</p>
+        </div>
+
+        <div class="box">
+            <h3>🪄 Rê bóng</h3>
+            <p>8.5/10</p>
+        </div>
+
     </div>
 
     <div class="footer">
-        You'll Never Walk Alone 🔴
+        🏆 DREAM BIG • WORK HARD • NEVER GIVE UP 🏆
+        <br><br>
+        🔴 YOU'LL NEVER WALK ALONE 🔴
     </div>
 
 </div>
